@@ -4,30 +4,30 @@ $(document).ready(function() {
         var stage1 = 'border-radius: 50%; width: 50px; height: 50px;';
         var stage2 = 'border-radius: 50%; width: 50px; height: 50px;background-color:gray;';
 
-        alert('xem ket qua');
+        if (confirm("Xem ket qua luon?")) {
+            if (getRandomInt(1, 3) === 1) {
+                $('#item1').attr('style', stage1);
+            } else {
+                $('#item1').attr('style', stage2);
+            }
 
-        if (getRandomInt(1, 3) === 1) {
-            $('#item1').attr('style', stage1);
-        } else {
-            $('#item1').attr('style', stage2);
-        }
+            if (getRandomInt(1, 3) === 1) {
+                $('#item2').attr('style', stage1);
+            } else {
+                $('#item2').attr('style', stage2);
+            }
 
-        if (getRandomInt(1, 3) === 1) {
-            $('#item2').attr('style', stage1);
-        } else {
-            $('#item2').attr('style', stage2);
-        }
+            if (getRandomInt(1, 3) === 1) {
+                $('#item3').attr('style', stage1);
+            } else {
+                $('#item3').attr('style', stage2);
+            }
 
-        if (getRandomInt(1, 3) === 1) {
-            $('#item3').attr('style', stage1);
-        } else {
-            $('#item3').attr('style', stage2);
-        }
-
-        if (getRandomInt(1, 3) === 1) {
-            $('#item4').attr('style', stage1);
-        } else {
-            $('#item4').attr('style', stage2);
+            if (getRandomInt(1, 3) === 1) {
+                $('#item4').attr('style', stage1);
+            } else {
+                $('#item4').attr('style', stage2);
+            }
         }
 
         console.log('xong phim');
